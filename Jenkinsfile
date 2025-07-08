@@ -33,7 +33,7 @@ pipeline {
   }
 
   post {
-    always { echo "Pipeline finished on branch ${env.BRANCH_NAME}" }
+    always { echo "Pipeline finished on  the branch ${env.BRANCH_NAME}" }
     failure { echo "Pipeline failed on branch ${env.BRANCH_NAME}" }
   }
 }
